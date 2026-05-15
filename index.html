@@ -30,6 +30,7 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header>
@@ -39,11 +40,11 @@
           <p class="logo_text">TAMANI HOMES</p>
         </div>
         <ul class="menu">
-          <li class="menu_item">Home</li>
-          <li class="menu_item">Properties</li>
-          <li class="menu_item">Agents</li>
-          <li class="menu_item">News & Events</li>
-          <li class="menu_item">Contacts</li>
+          <li><a class="menu_item focused">Home</a></li>
+          <li><a class="menu_item">Properties</a></li>
+          <li><a class="menu_item">Agents</a></li>
+          <li><a class="menu_item">News & Events</a></li>
+          <li><a class="menu_item">Contact Us</a></li>
         </ul>
       </section>
       <section id="hero">
@@ -52,8 +53,8 @@
             Find the perfect property for you
           </h1>
           <p class="hero_text">
-            Browse curated listings tailored to your needs, budget, and
-            lifestyle, and take the next step toward your ideal home.
+            Browse curated listings of off-plan, rental and on-sale propertes
+            tailored to your needs, budget, and lifestyle.
           </p>
           <a href="" class="btn btn_hero">See Listings</a>
         </div>
@@ -68,61 +69,38 @@
       </section>
     </header>
     <main>
-      <section id="property_grid">
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/syokimau.jpg" alt="" />
+      <section id="properties">
+        <h1 class="primary_heading">Featured Deals</h1>
+        <div class="property_grid">
+          <div class="listing">
+            <div class="listing_image"></div>
+            <h2 class="listing_title secondary_heading">Rhapta One</h2>
+            <h3 class="listing_location tertiary_heading">
+              Lavington, Nairobi
+            </h3>
+            <h3 class="listing_price tertiary_heading">Kes 10,000,000</h3>
+            <h3 class="listing_type tertiary_heading">Off-Plan</h3>
           </div>
-          <h2 class="listing_address secondary_heading">Syokimau</h2>
-          <h3 class="listing_location tertiary_heading">Nairobi</h3>
-          <h3 class="listing_price tertiary_heading">Kes 10,000,000</h3>
-          <h3 class="listing_type tertiary_heading">Sale</h3>
-        </div>
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/freearea.jpg" alt="" />
+          <div class="listing">
+            <div class="listing_image"></div>
+            <h2 class="listing_title secondary_heading">Himalaya Horizon</h2>
+            <h3 class="listing_location tertiary_heading">
+              Westlands, Nairobi
+            </h3>
+            <h3 class="listing_price tertiary_heading">Kes 18,000,000</h3>
+            <h3 class="listing_type tertiary_heading">Sale</h3>
           </div>
-          <h2 class="listing_address secondary_heading">Freearea</h2>
-          <h3 class="listing_location tertiary_heading">Nakuru</h3>
-          <h3 class="listing_price tertiary_heading">Kes 35,000</h3>
-          <h3 class="listing_type tertiary_heading">Rent</h3>
-        </div>
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/nyali.jpg" alt="" />
+          <div class="listing">
+            <div class="listing_image"></div>
+            <h2 class="listing_title secondary_heading">Dolce Vita</h2>
+            <h3 class="listing_location tertiary_heading">
+              Westlands, Nairobi
+            </h3>
+            <h3 class="listing_price tertiary_heading">Kes 40,000,000</h3>
+            <h3 class="listing_type tertiary_heading">Sale</h3>
           </div>
-          <h2 class="listing_address secondary_heading">Nyali</h2>
-          <h3 class="listing_location tertiary_heading">Mombasa</h3>
-          <h3 class="listing_price tertiary_heading">Kes 100,00,000</h3>
-          <h3 class="listing_type tertiary_heading">Sale</h3>
         </div>
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/ruaka.jpg" alt="" />
-          </div>
-          <h2 class="listing_address secondary_heading">Ruaka</h2>
-          <h3 class="listing_location tertiary_heading">Kiambu</h3>
-          <h3 class="listing_price tertiary_heading">Kes 90,000,000</h3>
-          <h3 class="listing_type tertiary_heading">Sale</h3>
-        </div>
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/upperhill.jpg" alt="" />
-          </div>
-          <h2 class="listing_address secondary_heading">Upperhill</h2>
-          <h3 class="listing_location tertiary_heading">Nairobi</h3>
-          <h3 class="listing_price tertiary_heading">Kes 200,000</h3>
-          <h3 class="listing_type tertiary_heading">Rent</h3>
-        </div>
-        <div class="listing">
-          <div class="listing_image">
-            <img src="img/karen.jpg" alt="" />
-          </div>
-          <h2 class="listing_address secondary_heading">Karen</h2>
-          <h3 class="listing_location tertiary_heading">Nairobi</h3>
-          <h3 class="listing_price tertiary_heading">Kes 300,000</h3>
-          <h3 class="listing_type tertiary_heading">Rent</h3>
-        </div>
+        <a href="" class="btn">Load More</a>
       </section>
       <section id="agents">
         <h1 class="agents_heading primary_heading">Your Trusted Agents</h1>
