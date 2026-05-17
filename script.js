@@ -7,3 +7,11 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("navbar-scroll");
   }
 });
+
+navbar.addEventListener("click", (e) => {
+  navbar.querySelectorAll(".menu_item").forEach((item) => {
+    item.classList.remove("focused");
+  });
+  const clicked = e.target.closest(".menu_item");
+  clicked.classList.add("focused");
+});

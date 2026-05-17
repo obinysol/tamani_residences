@@ -40,11 +40,11 @@
           <p class="logo_text">TAMANI HOMES</p>
         </div>
         <ul class="menu">
-          <li><a class="menu_item focused">Home</a></li>
-          <li><a class="menu_item">Properties</a></li>
-          <li><a class="menu_item">Agents</a></li>
-          <li><a class="menu_item">News & Events</a></li>
-          <li><a class="menu_item">Contact Us</a></li>
+          <li><a href="#" class="menu_item focused">Home</a></li>
+          <li><a href="#properties" class="menu_item">Properties</a></li>
+          <li><a href="#agents" class="menu_item">Agents</a></li>
+          <li><a href="#news" class="menu_item">Blog</a></li>
+          <li><a href="#contact" class="menu_item">Contact Us</a></li>
         </ul>
       </section>
       <section id="hero">
@@ -56,7 +56,7 @@
             Browse curated listings of off-plan, rental and on-sale propertes
             tailored to your needs, budget, and lifestyle.
           </p>
-          <a href="" class="btn btn_hero">See Listings</a>
+          <a href="#" class="btn btn_hero">See Listings</a>
         </div>
         <div style="display: none" class="slider">
           <h1 class="primary_heading">Find spaces for rent at honest prices</h1>
@@ -76,28 +76,64 @@
             <div class="listing_image"></div>
             <h2 class="listing_title secondary_heading">Rhapta One</h2>
             <h3 class="listing_location tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-pin"></use>
+              </svg>
               Lavington, Nairobi
             </h3>
-            <h3 class="listing_price tertiary_heading">Kes 10,000,000</h3>
-            <h3 class="listing_type tertiary_heading">Off-Plan</h3>
+            <h3 class="listing_price tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-price"></use></svg
+              ><span class="listing_currency">Kes</span>
+              10,000,000
+            </h3>
+            <h3 class="listing_type tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-tag"></use></svg
+              >Off-Plan
+            </h3>
           </div>
           <div class="listing">
             <div class="listing_image"></div>
             <h2 class="listing_title secondary_heading">Himalaya Horizon</h2>
             <h3 class="listing_location tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-pin"></use>
+              </svg>
               Westlands, Nairobi
             </h3>
-            <h3 class="listing_price tertiary_heading">Kes 18,000,000</h3>
-            <h3 class="listing_type tertiary_heading">Sale</h3>
+            <h3 class="listing_price tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-price"></use></svg
+              ><span class="listing_currency">Kes</span>
+              18,000,000
+            </h3>
+            <h3 class="listing_type tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-tag"></use></svg
+              >Sale
+            </h3>
           </div>
           <div class="listing">
             <div class="listing_image"></div>
             <h2 class="listing_title secondary_heading">Dolce Vita</h2>
             <h3 class="listing_location tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-pin"></use>
+              </svg>
               Westlands, Nairobi
             </h3>
-            <h3 class="listing_price tertiary_heading">Kes 40,000,000</h3>
-            <h3 class="listing_type tertiary_heading">Sale</h3>
+            <h3 class="listing_price tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-price"></use></svg
+              ><span class="listing_currency">Kes</span>
+              40,000,000
+            </h3>
+            <h3 class="listing_type tertiary_heading">
+              <svg class="listing_icon">
+                <use href="icons.svg#icon-tag"></use></svg
+              >Sale
+            </h3>
           </div>
         </div>
         <a href="" class="btn">Load More</a>
@@ -112,29 +148,85 @@
         <div class="agents_container">
           <div class="agent">
             <div class="agent_image">
-              <img src="img/mary.jpg" alt="" />
+              <div class="agent_socials">
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#fb"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#x"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="agent_socials">
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
+            <div class="agent_meta">
+              <h2 class="agent_name secondary_heading">Mary Jane</h2>
+              <p class="agent_title">
+                <svg class="agent_icon">
+                  <use href="icons.svg#icon-title"></use></svg
+                >Nairobi Area Coordinator
+              </p>
+              <p class="agent_fulfilment">
+                <svg class="agent_icon">
+                  <use href="icons.svg#icon-business"></use>
+                </svg>
+                <span class="agent_fulfilment_count">88</span> Dream Homes
+                Fulfilled
+              </p>
             </div>
-            <h2 class="agent_name secondary_heading">Mary Jane</h2>
-            <p class="agent_title">Nairobi Area Coordinator</p>
           </div>
           <div class="agent">
             <div class="agent_image">
-              <img src="img/john.jpg" alt="" />
+              <div class="agent_socials">
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#fb"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#instagram"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#x"></use>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg class="agent_social_icons">
+                    <use href="icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="agent_socials">
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
-              <svg class="agent_social_icons"></svg>
+            <div class="agent_meta">
+              <h2 class="agent_name secondary_heading">John Doe</h2>
+              <p class="agent_title">
+                <svg class="agent_icon">
+                  <use href="icons.svg#icon-title"></use></svg
+                >Mombasa Agent
+              </p>
+              <p class="agent_fulfilment">
+                <svg class="agent_icon">
+                  <use href="icons.svg#icon-business"></use>
+                </svg>
+                <span class="agent_fulfilment_count">67</span> Dream Homes
+                Fulfilled
+              </p>
             </div>
-            <h2 class="agent_name secondary_heading">John Doe</h2>
-            <p class="agent_title">Mombasa Agent</p>
           </div>
         </div>
       </section>
