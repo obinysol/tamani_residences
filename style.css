@@ -32,9 +32,9 @@
   --font-size-sub-text: 1.3rem;
   --font-size-normal-text: 1.1rem;
   /* Borders */
-  --border: 5px solid;
-  --border-primary: 5px solid rgb(var(--color-primary));
-  --border-secondary: 5px solid rgb(var(--color-bg));
+  --border: 6px solid;
+  --border-primary: 6px solid rgb(var(--color-primary));
+  --border-secondary: 6px solid rgb(var(--color-bg));
 }
 
 * {
@@ -351,6 +351,7 @@ a {
   margin-right: 2rem;
   overflow: hidden;
   border: var(--border) rgb(var(--color-secondary));
+  /* box-shadow: 0 0 0 6px rgb(var(--color-secondary)); */
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -358,6 +359,7 @@ a {
 .agent_image:hover {
   transform: scale(1.1);
   border: var(--border-primary);
+  /* box-shadow: 0 0 0 6px rgb(var(--color-primary)); */
 }
 
 .agent_socials {
