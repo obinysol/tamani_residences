@@ -30,9 +30,10 @@
   --color-surface: 184 174 168;
   /* Fonts Sizes */
   --font-size-sub-text: 1.3rem;
-  --font-size-normal-text: 1.1rem;
-  /* Borders */
+  --font-size-normal-text: 1.2rem;
+  --line-height-default: 1.8rem; /* Borders */
   --border: 6px solid;
+  --border--small: 2px solid;
   --border-primary: 6px solid rgb(var(--color-primary));
   --border-secondary: 6px solid rgb(var(--color-bg));
 }
@@ -199,7 +200,7 @@ a {
 /*  */
 #properties {
   display: flex;
-  background: url("img/Contour_Line.svg") center center/200%;
+  background: url("img/contour_line_properties.svg") center center/200%;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
@@ -431,29 +432,65 @@ a {
   font-weight: 800;
 }
 
+/* How it Works */
+/*  */
 #hiw {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3rem 0;
+  background: url("img/contour_line_hiw.svg") center center/cover;
 }
 
 .hiw_container {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-evenly;
+  padding: 0 10rem;
 }
 
 .hiw_entry {
   display: flex;
   flex-direction: column;
-  flex: 30%;
+  flex-basis: 28%;
+}
+
+.hiw_icon_wrapper {
+  background-color: rgb(var(--color-bg));
+  border: var(--border--small) rgb(var(--color-primary));
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  align-self: center;
+}
+
+.hiw_icon {
+  color: rgb(var(--color-primary));
+  height: 2rem;
+  width: 2rem;
+}
+
+.hiw_sub_heading {
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.hiw_text {
+  font-size: var(--font-size-normal-text);
+  line-height: var(--line-height-default);
 }
 
 #testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 15rem;
+  padding: 3rem 15rem;
+  background-color: rgb(var(--color-bg));
 }
 
 .testimonials_container {
