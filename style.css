@@ -689,7 +689,7 @@ a {
 }
 
 .contact_form * textarea {
-  height: 6rem;
+  height: 6.8rem;
   margin-bottom: 1rem;
 }
 
@@ -724,11 +724,12 @@ a {
 }
 
 footer {
+  padding: 0 10%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   background-color: rgb(var(--color-primary));
   color: rgb(var(--color-secondary));
+  grid-row-gap: 2rem;
 }
 
 #follow,
@@ -737,6 +738,83 @@ footer {
   justify-items: center;
 }
 
+#about,
+#subscribe {
+  padding: 2rem 4rem;
+}
+
+.about_heading,
+.subscribe_heading {
+  margin-bottom: 1rem;
+}
+
+.about_text {
+  font-size: var(--font-size-small-text);
+  padding-right: 8rem;
+  line-height: var(--line-height-default);
+}
+
+.subscribe_heading {
+  margin-bottom: 2rem;
+}
+
+.subscribe input {
+  color: var(--color-primary);
+  font-family: inherit;
+  border: none;
+  padding: 0.5rem;
+  font-size: var(--font-size-normal-text);
+  margin-right: 1rem;
+  width: 18rem;
+}
+
+.subscribe input:focus {
+  outline: var(--border--small) rgb(var(--color-secondary));
+}
+
+.subscribe .btn {
+  color: rgb(var(--color-primary));
+  background-color: rgb(var(--color-secondary));
+  padding: 0.68rem 1.4rem;
+}
+
+.subscribe .btn:hover {
+  color: rgb(var(--color-bg));
+  background-color: rgb(var(--color-surface));
+  transform: translateY(0.2rem);
+}
+
+#follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow_heading {
+  margin-bottom: 2rem;
+}
+
+.footer_social_icons_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_social_icons {
+  width: 1.4rem;
+  height: 1.4rem;
+  transition: all 0.2s ease;
+  padding: 0 1.2rem;
+}
+
+.footer_social_icons:hover {
+  color: rgb(var(--color-bg));
+  transform: scale(1.2);
+}
+
+#copyright {
+  padding: 2rem;
+}
 /* Typography Styling */
 
 body {
