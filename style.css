@@ -655,7 +655,7 @@ a {
 }
 
 .contact_form {
-  flex-basis: 50%;
+  flex-basis: 40%;
 }
 
 .contact_form * label {
@@ -701,7 +701,7 @@ a {
   padding-left: 4rem;
   justify-content: space-between;
   color: var(--color-primary);
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 
 .contact_details > * h2 {
