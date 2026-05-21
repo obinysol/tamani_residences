@@ -373,38 +373,59 @@
           <form action="" class="contact_form">
             <div class="contact_name">
               <label for="contact_name_input">Full Name</label>
-              <input id="contact_name_input" type="text" />
+              <input required id="contact_name_input" type="text" />
             </div>
             <div class="contact_email">
               <label for="contact_email_email">Email</label>
-              <input id="contact_email_email" type="email" />
+              <input required id="contact_email_email" type="email" />
             </div>
             <div class="contact_subject">
               <label for="contact_subject_subject">Subject</label>
-              <input id="contact_subject_subject" type="text" />
+              <input required id="contact_subject_subject" type="text" />
             </div>
             <div class="contact_message">
               <label for="contact_message_text">Message</label>
               <textarea
                 name="contact_message_text"
                 id="contact_message_text"
+                required
               ></textarea>
             </div>
             <button class="btn btn_submit">Send Message</button>
           </form>
           <div class="contact_details">
             <div class="contact_details_address">
-              <h3 class="tertiary_heading">Address</h3>
-              <p>23 Tamani Residences Building</p>
-              <p>Nairobi, Kenya</p>
+              <h2 class="secondary_heading">Address</h2>
+              <p>
+                <svg class="contact_details_icons">
+                  <use href="icons.svg#building"></use>
+                </svg>
+                23 Tamani Residences Building
+              </p>
+              <p>
+                <svg class="contact_details_icons">
+                  <use href="icons.svg#address"></use>
+                </svg>
+                Nairobi, Kenya
+              </p>
             </div>
             <div class="contact_details_phone">
-              <h3 class="tertiary_heading">Phone</h3>
-              <p>+254725752222</p>
+              <h2 class="secondary_heading">Phone</h2>
+              <p>
+                <svg class="contact_details_icons">
+                  <use href="icons.svg#phone"></use>
+                </svg>
+                +254725752222
+              </p>
             </div>
-            <div class="contact_details_address">
-              <h3 class="tertiary_heading">Email</h3>
-              <p>hello@tamaniresidences.com</p>
+            <div class="contact_details_email">
+              <h2 class="secondary_heading">Email</h2>
+              <p>
+                <svg class="contact_details_icons">
+                  <use href="icons.svg#email"></use>
+                </svg>
+                hello@tamaniresidences.com
+              </p>
             </div>
           </div>
         </div>
@@ -428,7 +449,7 @@
         </form>
       </section>
       <section id="follow">
-        <h2 class="follow_heading secondary_heading"></h2>
+        <h2 class="follow_heading secondary_heading">Follow Us</h2>
         <svg class="social_icons"></svg>
         <svg class="social_icons"></svg>
         <svg class="social_icons"></svg>
