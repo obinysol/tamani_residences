@@ -1028,6 +1028,14 @@ body {
     font-size: 10px;
   } */
 
+  .primary_heading.hero_heading {
+    padding: 0 6%;
+  }
+
+  .hero_text {
+    padding: 0 15% 6rem 15%;
+  }
+
   .testimonials_container {
     grid-template-columns: 1fr;
     padding: 0 8%;
@@ -1039,9 +1047,6 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  /* .primary_heading.hero_heading {
-    font-size: 3.2rem;
-  } */
   .agent_image {
     margin-bottom: 2rem;
     width: 10rem;
