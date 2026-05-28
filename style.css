@@ -222,6 +222,7 @@ header {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .menu_item {
@@ -958,6 +959,10 @@ body {
 
   #menu_hamburger:checked ~ .menu {
     display: flex;
+  }
+
+  .menu_item {
+    font-size: 1.8rem;
   }
 
   #navbar {
