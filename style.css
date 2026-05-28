@@ -76,7 +76,7 @@ header {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  padding-top: 3.4rem;
+  padding-top: 4.2rem;
   align-items: center;
   transition: all 1s;
 }
@@ -247,7 +247,7 @@ header {
 }
 
 .logo_text {
-  font-size: 2rem;
+  font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
 
@@ -962,7 +962,7 @@ body {
   }
 
   .menu_item {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   #navbar {
