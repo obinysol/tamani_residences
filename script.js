@@ -1,8 +1,12 @@
 const navbar = document.querySelector("#navbar");
 const menuItems = document.querySelectorAll(".menu_item");
-const sections = document.querySelectorAll("section");
+const menu = document.querySelector(".menu");
+const sections = document.querySelectorAll("section, #hero");
+const menuHamburger = document.querySelector("#menu_hamburger");
+const menuHamburgerLabel = document.querySelector(".menu_hamburger_label");
 
 window.addEventListener("scroll", () => {
+  if (menuHamburger.checked) return;
   if (scrollY > 0) {
     navbar.classList.add("navbar-scroll");
   } else {
@@ -10,12 +14,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
-navbar.addEventListener("click", (e) => {
-  navbar.querySelectorAll(".menu_item").forEach((item) => {
+menuHamburgerLabel.addEventListener("click", () => {
+  if (!menuHamburger.checked) navbar.classList.add("navbar-scroll");
+  if (scrollY == 0 && menuHamburger.checked)
+    navbar.classList.remove("navbar-scroll");
+});
+
+menu.addEventListener("click", (e) => {
+  menu.querySelectorAll(".menu_item").forEach((item) => {
     item.classList.remove("focused");
   });
   const clicked = e.target.closest(".menu_item");
   clicked.classList.add("focused");
+  menuHamburger.checked = false;
 });
 
 const observerOptions = {

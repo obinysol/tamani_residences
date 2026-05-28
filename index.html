@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tamani Residences</title>
+    <!-- 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,11 +35,19 @@
   </head>
   <body>
     <header>
-      <section id="navbar">
+      <nav id="navbar">
         <a href="#" class="logo">
-          <!-- <img src="img/logo.png" alt="" /> -->
           <p class="logo_text">TAMANI HOMES</p>
         </a>
+        <input
+          style="display: none"
+          type="checkbox"
+          name="menu_hamburger"
+          id="menu_hamburger"
+        />
+        <label for="menu_hamburger" class="menu_hamburger_label"
+          ><div class="menu_hamburger_line"></div
+        ></label>
         <ul class="menu">
           <li><a href="#" class="menu_item focused">Home</a></li>
           <li><a href="#properties" class="menu_item">Properties</a></li>
@@ -46,8 +55,8 @@
           <li><a href="#news" class="menu_item">Blog</a></li>
           <li><a href="#contact" class="menu_item">Contact Us</a></li>
         </ul>
-      </section>
-      <section id="hero">
+      </nav>
+      <div id="hero">
         <div class="slider">
           <h1 class="hero_heading primary_heading">
             Find the perfect property for you
@@ -58,7 +67,7 @@
           </p>
           <a href="#" class="btn btn_hero">See Listings</a>
         </div>
-      </section>
+      </div>
     </header>
     <main>
       <section id="properties">
@@ -424,14 +433,14 @@
       </section>
     </main>
     <footer>
-      <section id="about">
+      <div id="about">
         <h2 class="about_heading secondary_heading">About Us</h2>
         <p class="about_text">
           We are a Kenyan-based real estate company committed to providing our
           customers the best of what the market has to offer at honest prices.
         </p>
-      </section>
-      <section id="subscribe">
+      </div>
+      <div id="subscribe">
         <h2 class="subscribe_heading secondary_heading">
           Subscribe to our newsletter
         </h2>
@@ -439,8 +448,8 @@
           <input type="text" placeholder="Enter email" />
           <button class="btn btn_submit">Send</button>
         </form>
-      </section>
-      <section id="follow">
+      </div>
+      <div id="follow">
         <h2 class="follow_heading secondary_heading">Follow Us</h2>
         <div class="footer_social_icons_container">
           <svg class="footer_social_icons"><use href="icons.svg#fb"></use></svg>
@@ -452,12 +461,12 @@
             <use href="icons.svg#linkedin"></use>
           </svg>
         </div>
-      </section>
-      <section id="copyright">
+      </div>
+      <div id="copyright">
         <p class="copyright_text">
           © 2026 Tamani Residences. All rights reserved
         </p>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
