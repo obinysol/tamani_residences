@@ -904,6 +904,22 @@ body {
   text-transform: uppercase;
 }
 
+@media (hover: none) {
+  *:hover {
+    transform: inherit !important;
+    translate: inherit !important;
+    scale: inherit !important;
+    color: inherit !important;
+    background: inherit !important;
+    background-color: inherit !important;
+    box-shadow: inherit !important;
+    opacity: inherit !important;
+    visibility: inherit !important;
+    border-bottom: inherit !important;
+    border: inerit !important;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 14px;
