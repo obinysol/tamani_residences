@@ -865,7 +865,7 @@ body {
   text-transform: uppercase;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .btn:hover {
     transform: translateY(0.3rem);
     background-color: rgb(var(--color-surface) / 0.8);
