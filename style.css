@@ -905,6 +905,9 @@ body {
 }
 
 @media (hover: none) {
+  * {
+    transition: none !important; /* optional: makes it snappier */
+  }
   *:hover {
     transform: inherit !important;
     translate: inherit !important;
