@@ -54,7 +54,7 @@ button,
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 1.5rem;
+  scroll-padding-top: 1.8rem;
   font-size: 16px;
 }
 
@@ -74,7 +74,7 @@ header {
 }
 
 .slider {
-  background: url("img/hero.jpeg") center center/cover;
+  /* background: url("img/hero.jpeg") center center/cover; */
   flex-basis: 100%;
   flex-shrink: 0;
   height: 100vh;
@@ -85,7 +85,7 @@ header {
   box-sizing: border-box;
   padding-top: 4.2rem;
   align-items: center;
-  transition: all 1s;
+  /* transition: all 1s; */
 }
 
 .slider::before {
@@ -96,8 +96,37 @@ header {
   width: 100%;
   height: 100%;
   /* inset: 0; */
-  background: rgb(var(--color-primary) / 0.2);
+  background: rgb(var(--color-primary) / 0.3);
   z-index: 1;
+}
+
+:has(.slider_img) {
+  position: relative;
+}
+
+.slider_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1), ease-out;
+  transition-duration: 0.8s;
+  backface-visibility: hidden;
+}
+
+.s1 {
+  background: url("img/hero.jpeg") center center/cover;
+}
+
+.s2 {
+  background: url("img/hero2.jpg") center center/cover;
+}
+
+.s3 {
+  background: url("img/hero3.jpeg") center center/cover;
 }
 
 .slider > * {
@@ -122,7 +151,15 @@ header {
   text-align: center;
   /* padding: 0 30rem 3rem 30rem; */
   padding: 0 30% 6rem 30%;
-  color: rgb(var(--color-secondary));
+  /* color: rgb(var(--color-secondary)); */
+  color: transparent;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(var(--color-secondary)) 0%,
+    rgb(var(--color-bg)) 50%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
   font-size: var(--font-size-sub-text);
 }
 
@@ -150,10 +187,16 @@ header {
 
 #navbar {
   display: flex;
-  background-color: rgb(var(--color-primary) / 0.1);
+  /* background-color: rgb(var(--color-primary) / 0.1); */
   /* backdrop-filter: blur(1px); */
   color: rgb(var(--color-secondary));
-  text-shadow: 0 1px 5px -3px rgb(247, 243, 247);
+  border: none;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(var(--color-primary) / 0.8) 0%,
+    transparent
+  );
+  box-shadow: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -234,7 +277,8 @@ header {
 }
 
 #navbar .menu .menu_item.focused {
-  color: rgb(var(--color-primary));
+  /* color: rgb(var(--color-primary)); */
+  color: rgb(var(--color-bg));
 }
 
 #navbar.navbar-scroll .menu .menu_item.focused {
@@ -242,7 +286,7 @@ header {
 }
 
 .logo_text {
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   letter-spacing: 0.5rem;
 }
 
@@ -968,6 +1012,10 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  html {
+    font-size: 13.2px;
+  }
+
   :root {
     --padding-section-default: 3rem 8%;
   }
@@ -980,6 +1028,10 @@ body {
 @media screen and (max-width: 900px) {
   html {
     font-size: 12px;
+  }
+
+  .logo_text {
+    font-size: 3.2rem;
   }
 
   .menu_hamburger_label {
