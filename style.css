@@ -308,7 +308,8 @@ header {
   background: url("img/deals3.jpg") center center/cover;
 }
 
-.listing:hover .listing_image {
+.listing:hover .listing_image,
+.listing.tap .listing_image {
   box-shadow:
     2.6rem 11.5rem rgb(var(--color-primary)),
     2.6rem 3rem rgb(var(--color-primary));
@@ -320,12 +321,14 @@ header {
   transition: all 0.1s ease-in-out;
 }
 
-.listing:hover > *:not(.listing_image) {
+.listing:hover > *:not(.listing_image),
+.listing.tap > *:not(.listing_image) {
   transform: translate(4rem, 0.5rem);
   color: rgb(var(--color-bg));
 }
 
-.listing:hover .listing_title {
+.listing:hover .listing_title,
+.listing.tap .listing_title {
   color: rgb(var(--color-secondary));
 }
 

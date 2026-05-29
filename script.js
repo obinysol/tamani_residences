@@ -4,6 +4,13 @@ const menu = document.querySelector(".menu");
 const sections = document.querySelectorAll("section, #hero");
 const menuHamburger = document.querySelector("#menu_hamburger");
 const menuHamburgerLabel = document.querySelector(".menu_hamburger_label");
+const tappableElements = [
+  ".btn",
+  ".menu_item",
+  ".listing",
+  ".news_entry",
+  ".footer_social_icons",
+];
 
 window.addEventListener("scroll", () => {
   if (menuHamburger.checked) return;
@@ -12,6 +19,21 @@ window.addEventListener("scroll", () => {
   } else {
     navbar.classList.remove("navbar-scroll");
   }
+});
+
+// console.log(document.querySelectorAll(tappableElements));
+
+document.querySelectorAll(tappableElements).forEach((item) => {
+  item.addEventListener("touchstart", () => item.classList.add("tap"), {
+    passive: true,
+  });
+  item.addEventListener(
+    "touchend",
+    () => {
+      setTimeout(() => item.classList.remove("tap"), 120);
+    },
+    { passive: true },
+  );
 });
 
 menuHamburgerLabel.addEventListener("click", () => {
