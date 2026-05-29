@@ -134,7 +134,7 @@ header {
   border: none;
 }
 
-.btn:hover {
+.btn.tap {
   transform: translateY(0.3rem);
   background-color: rgb(var(--color-surface) / 0.8);
   color: rgb(var(--color-primary));
@@ -199,18 +199,6 @@ header {
   border-bottom: inherit;
 }
 
-.menu_hamburger_label:hover .menu_hamburger_line {
-  border-bottom: 2px solid rgb(var(--color-secondary));
-}
-
-.menu_hamburger_label:hover .menu_hamburger_line::before {
-  transform: translateY(-0.8rem);
-}
-
-.menu_hamburger_label:hover .menu_hamburger_line::after {
-  transform: translateY(0.8rem);
-}
-
 #navbar li {
   list-style: none;
   cursor: pointer;
@@ -234,7 +222,7 @@ header {
   backface-visibility: hidden;
 }
 
-.menu_item:hover {
+.menu_item.tap {
   transform: scale(1.1);
 }
 
@@ -308,7 +296,6 @@ header {
   background: url("img/deals3.jpg") center center/cover;
 }
 
-.listing:hover .listing_image,
 .listing.tap .listing_image {
   box-shadow:
     2.6rem 11.5rem rgb(var(--color-primary)),
@@ -321,13 +308,11 @@ header {
   transition: all 0.1s ease-in-out;
 }
 
-.listing:hover > *:not(.listing_image),
 .listing.tap > *:not(.listing_image) {
   transform: translate(4rem, 0.5rem);
   color: rgb(var(--color-bg));
 }
 
-.listing:hover .listing_title,
 .listing.tap .listing_title {
   color: rgb(var(--color-secondary));
 }
@@ -422,12 +407,6 @@ header {
   cursor: pointer;
 }
 
-.agent_image:hover {
-  transform: scale(1.1);
-  border: var(--border-primary);
-  /* box-shadow: 0 0 0 6px rgb(var(--color-primary)); */
-}
-
 .agent_socials {
   visibility: hidden;
   width: 100%;
@@ -448,26 +427,12 @@ header {
   margin: 0;
 }
 
-.agent_socials:has(.agent_social_icons:hover) {
-  background-color: rgb(var(--color-primary) / 0.4);
-}
-
-.agent_image:hover .agent_socials {
-  opacity: 1;
-  visibility: visible;
-}
-
 .agent_social_icons {
   height: 1.3rem;
   width: 1.3rem;
   color: rgb(var(--color-primary));
   display: inline-block;
   transition: transform 0.2s ease;
-}
-
-.agent_social_icons:hover {
-  transform: scale(1.3);
-  color: rgb(var(--color-secondary));
 }
 
 .agent_meta {
@@ -640,7 +605,7 @@ header {
   transition: all 0.2s ease;
 }
 
-.news_entry:hover {
+.news_entry.tap {
   transform: translate(0.24rem, 0.24rem);
 }
 
@@ -648,15 +613,11 @@ header {
   transform: translate(0.24rem, 1rem);
 }
 
-.news_entry:hover {
-  transform: translate(0.24rem, 0.24rem);
-}
-
-.news_entry:hover .news_entry_image {
+.news_entry.tap .news_entry_image {
   border: var(--border) rgb(var(--color-secondary));
 }
 
-.news_entry:hover .news_entry_title {
+.news_entry.tap .news_entry_title {
   color: rgb(var(--color-secondary));
 }
 
@@ -853,7 +814,7 @@ footer {
   padding: 0.52rem 1.4rem;
 }
 
-.subscribe .btn:hover {
+.subscribe .btn.tap {
   color: rgb(var(--color-bg));
   background-color: rgb(var(--color-surface));
   transform: translateY(0.2rem);
@@ -882,7 +843,7 @@ footer {
   padding: 0 1.2rem;
 }
 
-.footer_social_icons:hover {
+.footer_social_icons.tap {
   color: rgb(var(--color-bg));
   transform: scale(1.2);
 }
@@ -904,22 +865,88 @@ body {
   text-transform: uppercase;
 }
 
-@media (hover: none) {
-  * {
-    transition: none !important; /* optional: makes it snappier */
+@media (hover: hover) {
+  .btn:hover {
+    transform: translateY(0.3rem);
+    background-color: rgb(var(--color-surface) / 0.8);
+    color: rgb(var(--color-primary));
+    box-shadow: 0.5px 0.5px 5px -3px rgb(var(--color-primary));
   }
-  *:hover {
-    transform: inherit !important;
-    translate: inherit !important;
-    scale: inherit !important;
-    color: inherit !important;
-    background: inherit !important;
-    background-color: inherit !important;
-    box-shadow: inherit !important;
-    opacity: inherit !important;
-    visibility: inherit !important;
-    border-bottom: inherit !important;
-    border: inerit !important;
+
+  .menu_hamburger_label:hover .menu_hamburger_line {
+    border-bottom: 2px solid rgb(var(--color-secondary));
+  }
+
+  .menu_hamburger_label:hover .menu_hamburger_line::before {
+    transform: translateY(-0.8rem);
+  }
+
+  .menu_hamburger_label:hover .menu_hamburger_line::after {
+    transform: translateY(0.8rem);
+  }
+
+  .menu_item:hover {
+    transform: scale(1.1);
+  }
+
+  .listing:hover .listing_image {
+    box-shadow:
+      2.6rem 11.5rem rgb(var(--color-primary)),
+      2.6rem 3rem rgb(var(--color-primary));
+    transform: translate(0.5rem, 0.5rem);
+    border: var(--border-secondary);
+  }
+
+  .listing:hover > *:not(.listing_image) {
+    transform: translate(4rem, 0.5rem);
+    color: rgb(var(--color-bg));
+  }
+
+  .listing:hover .listing_title {
+    color: rgb(var(--color-secondary));
+  }
+
+  .agent_image:hover {
+    transform: scale(1.1);
+    border: var(--border-primary);
+    /* box-shadow: 0 0 0 6px rgb(var(--color-primary)); */
+  }
+
+  .agent_socials:has(.agent_social_icons:hover) {
+    background-color: rgb(var(--color-primary) / 0.4);
+  }
+
+  .agent_social_icons:hover {
+    transform: scale(1.3);
+    color: rgb(var(--color-secondary));
+  }
+
+  .agent_image:hover .agent_socials {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .news_entry:hover {
+    transform: translate(0.24rem, 0.24rem);
+  }
+
+  .news_entry:hover .news_entry_image {
+    border: var(--border) rgb(var(--color-secondary));
+  }
+
+  .news_entry:hover .news_entry_title {
+    color: rgb(var(--color-secondary));
+  }
+
+  .subscribe .btn:hover {
+    color: rgb(var(--color-bg));
+    background-color: rgb(var(--color-surface));
+    transform: translateY(0.2rem);
+  }
+
+  .footer_social_icons:hover {
+    color: rgb(var(--color-bg));
+    transform: scale(1.2);
   }
 }
 
