@@ -34,6 +34,32 @@
     <script defer src="script.js"></script>
   </head>
   <body>
+    <div class="contact_bar">
+      <div class="contact_details_address">
+        <p>
+          <svg class="contact_details_icons">
+            <use href="icons.svg#address"></use>
+          </svg>
+          23 Tamani Residences Building, Nairobi, Kenya
+        </p>
+      </div>
+      <div class="contact_details_phone">
+        <p>
+          <svg class="contact_details_icons">
+            <use href="icons.svg#phone"></use>
+          </svg>
+          + 254 725 752 222 | + 254 111 463 878
+        </p>
+      </div>
+      <div class="contact_details_email">
+        <p>
+          <svg class="contact_details_icons">
+            <use href="icons.svg#email"></use>
+          </svg>
+          hello@tamaniresidences.com
+        </p>
+      </div>
+    </div>
     <header>
       <nav id="navbar">
         <a href="#" class="logo">
@@ -78,24 +104,54 @@
         <div class="property_grid">
           <div class="listing">
             <div class="listing_image"></div>
-            <h2 class="listing_title secondary_heading">Rhapta One</h2>
-            <h3 class="listing_location tertiary_heading">
-              <svg class="listing_icon">
-                <use href="icons.svg#icon-pin"></use>
-              </svg>
-              Lavington, Nairobi
-            </h3>
-            <h3 class="listing_price tertiary_heading">
-              <svg class="listing_icon">
-                <use href="icons.svg#icon-price"></use></svg
-              ><span class="listing_currency">Kes</span>
-              10,000,000
-            </h3>
-            <h3 class="listing_type tertiary_heading">
-              <svg class="listing_icon">
-                <use href="icons.svg#icon-tag"></use></svg
-              >Off-Plan
-            </h3>
+            <!-- <h2 class="listing_title secondary_heading">Rhapta One</h2> -->
+            <h2 class="listing_title secondary_heading">
+              <span class="listing_currency">KES</span>10,000,000
+            </h2>
+            <!-- <p class="listing_description">
+              A serene property situated 8km from Nairobi central business
+              district
+            </p> -->
+            <div class="listing_meta">
+              <h3 class="listing_location tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-pin"></use>
+                </svg>
+                Lavington, Nairobi
+              </h3>
+              <!-- <h3 class="listing_price tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-price"></use></svg
+                ><span class="listing_currency">Kes</span>
+                10,000,000
+              </h3> -->
+              <h3 class="listing_type tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#apartment"></use></svg
+                ><span class="listing_type_option">Apartment</span>
+              </h3>
+              <h3 class="listing_tag tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-tag"></use></svg
+                >Off-Plan
+              </h3>
+              <h3 class="listing_bed tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#bed"></use></svg
+                ><span class="listing_bed_count">3 </span> Bedroom(s)
+              </h3>
+              <h3 class="listing_bath tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#bathroom"></use></svg
+                ><span class="listing_bath_count">2 </span> Bathroms(s)
+              </h3>
+              <h3 class="listing_size tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#size"></use></svg
+                ><span class="listing_size_num">241 </span>
+                <span class="listing_size_unit">sqft</span>
+              </h3>
+            </div>
           </div>
           <div class="listing">
             <div class="listing_image"></div>

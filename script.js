@@ -4,6 +4,7 @@ const menu = document.querySelector(".menu");
 const sections = document.querySelectorAll("section, #hero");
 const menuHamburger = document.querySelector("#menu_hamburger");
 const menuHamburgerLabel = document.querySelector(".menu_hamburger_label");
+const contactBar = document.querySelector(".contact_bar");
 const tappableElements = [
   ".btn",
   ".menu_item",
@@ -102,11 +103,15 @@ setInterval(() => {
 }, SLIDER_TIMING);
 
 window.addEventListener("scroll", () => {
+  console.log(contactBar.getBoundingClientRect().height);
   if (menuHamburger.checked) return;
   if (scrollY > 0) {
     navbar.classList.add("navbar-scroll");
+    navbar.style.top = 0;
   } else {
     navbar.classList.remove("navbar-scroll");
+    navbar.style.top = `${contactBar.getBoundingClientRect().bottom > 0 ? contactBar.getBoundingClientRect().bottom : contactBar.getBoundingClientRect().height}px`;
+    // navbar.style.top = "100rem";
   }
 });
 
