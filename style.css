@@ -37,7 +37,7 @@
   --border--small: 2px solid;
   --border-primary: 6px solid rgb(var(--color-primary));
   --border-secondary: 6px solid rgb(var(--color-bg));
-  --padding-section-default: 3rem 12%;
+  --padding-section-default: 3rem 10%;
 }
 
 * {
@@ -351,6 +351,7 @@ header {
 
 .listing {
   cursor: pointer;
+  /* transition: all 0.3s ease; */
 }
 .listing_image {
   box-sizing: border-box;
@@ -360,7 +361,7 @@ header {
   overflow: hidden;
   background-color: #333;
   margin-bottom: 2rem;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
 }
 
 .listing:nth-child(1) .listing_image {
@@ -384,7 +385,7 @@ header {
 }
 
 .listing > *:not(.listing_image) {
-  transition: all 0.1s ease-in-out;
+  /* transition: all 0.1s ease; */
 }
 
 .listing.tap > *:not(.listing_image) {
@@ -445,7 +446,7 @@ header {
 }
 
 .listing_meta h3 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .listing_meta > * {
@@ -456,9 +457,9 @@ header {
 }
 
 .listing_icon {
-  height: 1.6em;
-  width: 1.6em;
-  margin-right: 0.6em;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.6rem;
 }
 
 .listing_meta * span {
@@ -1089,7 +1090,7 @@ body {
   }
 
   :root {
-    --padding-section-default: 3rem 8%;
+    --padding-section-default: 3rem 6%;
   }
 
   .hiw_container {
