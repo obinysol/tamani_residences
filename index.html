@@ -34,32 +34,32 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="contact_bar">
-      <div class="contact_details_address">
-        <p>
+    <address class="contact_bar">
+      <dl class="contact_details_address">
+        <dt>
           <svg class="contact_details_icons">
             <use href="icons.svg#address"></use>
           </svg>
-          23 Tamani Residences Building, Nairobi, Kenya
-        </p>
-      </div>
-      <div class="contact_details_phone">
-        <p>
+        </dt>
+        <dd>23 Tamani Residences Building, Nairobi, Kenya</dd>
+      </dl>
+      <dl class="contact_details_phone">
+        <dt>
           <svg class="contact_details_icons">
             <use href="icons.svg#phone"></use>
           </svg>
-          + 254 725 752 222 | + 254 111 463 878
-        </p>
-      </div>
-      <div class="contact_details_email">
-        <p>
+        </dt>
+        <dd>+ 254 725 752 222 | + 254 111 463 878</dd>
+      </dl>
+      <dl class="contact_details_email">
+        <dt>
           <svg class="contact_details_icons">
             <use href="icons.svg#email"></use>
           </svg>
-          hello@tamaniresidences.com
-        </p>
-      </div>
-    </div>
+        </dt>
+        <dd>hello@tamaniresidences.com</dd>
+      </dl>
+    </address>
     <header>
       <nav id="navbar">
         <a href="#" class="logo">
@@ -85,7 +85,7 @@
       <div class="slider_img s1"></div>
       <div class="slider_img s2"></div>
       <div class="slider_img s3"></div>
-      <div id="hero">
+      <section id="hero">
         <div class="slider">
           <h1 class="hero_heading primary_heading">
             Find the perfect property for you
@@ -96,13 +96,13 @@
           </p>
           <a href="#" class="btn btn_hero">See Listings</a>
         </div>
-      </div>
+      </section>
     </header>
     <main>
       <section id="properties">
         <h1 class="primary_heading">Featured Deals</h1>
         <div class="property_grid">
-          <div class="listing">
+          <article class="listing">
             <div class="listing_image"></div>
             <!-- <h2 class="listing_title secondary_heading">Rhapta One</h2> -->
             <h2 class="listing_title secondary_heading">
@@ -130,15 +130,15 @@
                   <use href="icons.svg#apartment"></use></svg
                 ><span class="listing_type_option">Apartment</span>
               </h3>
-              <h3 class="listing_tag tertiary_heading">
-                <svg class="listing_icon">
-                  <use href="icons.svg#icon-tag"></use></svg
-                >Off-Plan
-              </h3>
               <h3 class="listing_bed tertiary_heading">
                 <svg class="listing_icon">
                   <use href="icons.svg#bed"></use></svg
                 ><span class="listing_bed_count">3 </span> Bedroom(s)
+              </h3>
+              <h3 class="listing_tag tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-tag"></use></svg
+                >Off-Plan
               </h3>
               <h3 class="listing_bath tertiary_heading">
                 <svg class="listing_icon">
@@ -152,8 +152,8 @@
                 <span class="listing_size_unit">sqft</span>
               </h3>
             </div>
-          </div>
-          <div class="listing">
+          </article>
+          <article class="listing">
             <div class="listing_image"></div>
             <!-- <h2 class="listing_title secondary_heading">Rhapta One</h2> -->
             <h2 class="listing_title secondary_heading">
@@ -181,15 +181,15 @@
                   <use href="icons.svg#house"></use></svg
                 ><span class="listing_type_option">House</span>
               </h3>
-              <h3 class="listing_tag tertiary_heading">
-                <svg class="listing_icon">
-                  <use href="icons.svg#icon-tag"></use></svg
-                >Sale
-              </h3>
               <h3 class="listing_bed tertiary_heading">
                 <svg class="listing_icon">
                   <use href="icons.svg#bed"></use></svg
                 ><span class="listing_bed_count">2 </span> Bedroom(s)
+              </h3>
+              <h3 class="listing_tag tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-tag"></use></svg
+                >Sale
               </h3>
               <h3 class="listing_bath tertiary_heading">
                 <svg class="listing_icon">
@@ -203,8 +203,8 @@
                 <span class="listing_size_unit">sqm</span>
               </h3>
             </div>
-          </div>
-          <div class="listing">
+          </article>
+          <article class="listing">
             <div class="listing_image"></div>
             <!-- <h2 class="listing_title secondary_heading">Rhapta One</h2> -->
             <h2 class="listing_title secondary_heading">
@@ -232,15 +232,15 @@
                   <use href="icons.svg#apartment"></use></svg
                 ><span class="listing_type_option">Apartment</span>
               </h3>
-              <h3 class="listing_tag tertiary_heading">
-                <svg class="listing_icon">
-                  <use href="icons.svg#icon-tag"></use></svg
-                >Rent
-              </h3>
               <h3 class="listing_bed tertiary_heading">
                 <svg class="listing_icon">
                   <use href="icons.svg#bed"></use></svg
                 ><span class="listing_bed_count">4 </span> Bedroom(s)
+              </h3>
+              <h3 class="listing_tag tertiary_heading">
+                <svg class="listing_icon">
+                  <use href="icons.svg#icon-tag"></use></svg
+                >Rent
               </h3>
               <h3 class="listing_bath tertiary_heading">
                 <svg class="listing_icon">
@@ -254,7 +254,7 @@
                 <span class="listing_size_unit">sqft</span>
               </h3>
             </div>
-          </div>
+          </article>
           <!-- <div class="listing">
             <div class="listing_image"></div>
             <h2 class="listing_title secondary_heading">Himalaya Horizon</h2>

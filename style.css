@@ -52,6 +52,10 @@ button,
   /* -webkit-touch-callout: none; */
 }
 
+address {
+  font-style: inherit;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 1.8rem;
@@ -83,7 +87,7 @@ header {
   font-size: 1rem;
 }
 
-.contact_bar > * > * {
+.contact_bar > * {
   display: flex;
   align-items: center;
 }
